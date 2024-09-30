@@ -85,5 +85,4 @@
 };
 
 &led_strip { chain-length = <27>; };
-&soft_off { hold-time-ms = <2500>; };
 
