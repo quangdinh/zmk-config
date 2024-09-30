@@ -26,7 +26,7 @@
             bindings = <
 &mt LEFT_ALT ESCAPE  &lt 4 Q  &kp W  &kp E  &kp R                 &kp T                 &kp Y            &kp U      &kp I          &kp O    &kp P        &kp BACKSLASH
 &mt LCTRL TAB        &kp A    &kp S  &kp D  &kp F                 &kp G                 &kp H            &kp J      &kp K          &kp L    &kp SEMI     &mt RIGHT_ALT SINGLE_QUOTE
-&kp LEFT_SHIFT       &lt 2 Z  &kp X  &kp C  &kp V                 &kp B                 &kp N            &kp M      &kp COMMA      &kp DOT  &lt 3 SLASH  &kp RIGHT_CONTROL
+&mo 5                &lt 2 Z  &kp X  &kp C  &kp V                 &kp B                 &kp N            &kp M      &kp COMMA      &kp DOT  &lt 3 SLASH  &kp RIGHT_CONTROL
                                      &mo 1  &mt LEFT_SHIFT ENTER  &mt LEFT_GUI SPACE    &kp RIGHT_SHIFT  &kp SPACE  &kp BACKSPACE
             >;
         };
@@ -70,6 +70,15 @@
 &trans  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans
 &trans  &trans     &trans    &trans    &trans     &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F12  &kp LCTRL
                              &trans    &trans     &trans    &trans  &trans  &trans
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&bt BT_CLR_ALL  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4     &trans  &trans  &trans  &trans  &trans  &trans
+&bt BT_CLR      &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4    &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &trans         &trans         &trans         &trans         &trans           &trans  &trans  &trans  &trans  &trans  &trans
+                                              &out OUT_USB   &soft_off      &out OUT_BLE     &trans  &trans  &trans
             >;
         };
     };
