@@ -58,7 +58,7 @@
             bindings = <
 &trans  &trans  &bl BL_DEC     &ext_power EP_TOG  &bl BL_INC    &bl BL_CYCLE    &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3       &bt BT_SEL 4   &bt BT_CLR
 &trans  &trans  &kp C_BRI_DEC  &trans             &kp C_BRI_UP  &trans          &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3      &bt BT_DISC 4  &out OUT_BLE
-&trans  &trans  &kp C_VOL_DN   &kp C_MUTE         &kp C_VOL_UP  &trans          &trans         &trans         &trans         &ext_power EP_OFF  &trans         &out OUT_USB
+&trans  &trans  &kp C_VOL_DN   &kp C_MUTE         &kp C_VOL_UP  &trans          &bl BL_SET 10  &bl BL_SET 30  &bl BL_SET 60  &ext_power EP_OFF  &trans         &out OUT_USB
                                &trans             &trans        &trans          &trans         &trans         &trans
             >;
         };
