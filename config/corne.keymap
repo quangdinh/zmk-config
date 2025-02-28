@@ -33,14 +33,12 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&none &kp L &kp E &kp Q &kp U &kp A &kp N &kp G &kp D &kp I &kp N &kp H &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
-            label = "EMAIL";
         };
 
         name: name {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&none &kp LS(Q) &kp U &kp A &kp N &kp G &kp SPACE &kp LS(D) &kp I &kp N &kp H &kp SPACE &kp LS(L) &kp E>;
-            label = "NAME";
         };
     };
 
