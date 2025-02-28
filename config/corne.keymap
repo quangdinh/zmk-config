@@ -116,5 +116,5 @@
 &led_strip { chain-length = <27>; };
 &mt {
     retro-tap;
-     tapping-term-ms = <250>;
+     tapping-term-ms = <400>;
 };
