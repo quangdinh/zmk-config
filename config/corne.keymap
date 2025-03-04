@@ -11,8 +11,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 &lt {
@@ -114,10 +112,10 @@
 
         Nav {
             bindings = <
-&trans  &trans  &trans     &trans    &trans    &trans    &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &trans  &trans
-&trans  &trans  &trans     &trans    &trans    &trans    &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &trans  &trans
-&trans  &trans  &kp LCTRL  &kp LALT  &kp LGUI  &trans    &trans    &trans         &trans       &trans     &trans  &trans
-                           &trans    &trans    &trans    &trans    &trans         &trans
+&trans  &trans  &trans     &trans    &trans    &trans    &kp HOME               &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &trans  &trans
+&trans  &trans  &trans     &trans    &trans    &trans    &kp LEFT               &kp DOWN       &kp UP       &kp RIGHT  &trans  &trans
+&trans  &trans  &kp LCTRL  &kp LALT  &kp LGUI  &trans    &trans                 &trans         &trans       &trans     &trans  &trans
+                           &trans    &trans    &trans    &mt RIGHT_SHIFT SPACE  &trans         &trans
             >;
         };
 
