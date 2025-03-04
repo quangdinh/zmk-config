@@ -2,6 +2,8 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: quangdinh
+      url-base: https://github.com/quangdinh
   projects:
     - name: zmk
       remote: zmkfirmware
