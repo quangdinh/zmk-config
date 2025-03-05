@@ -14,8 +14,9 @@
 #include <dt-bindings/zmk/rgb.h>
 
 &lt {
-    require-prior-idle-ms = <125>;
-    quick-tap-ms = <200>;
+    require-prior-idle-ms = <75>;
+    quick-tap-ms = <175>;
+    tapping-term-ms = <175>;
 };
 
 / {
@@ -23,12 +24,12 @@
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <200>;
+            tapping-term-ms = <175>;
+            quick-tap-ms = <175>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
 
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <75>;
         };
     };
 
@@ -39,20 +40,21 @@
             bindings = <&Email>;
             key-positions = <3 31>;
             layers = <0>;
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <350>;
         };
 
         name {
             bindings = <&Name>;
             key-positions = <15 21>;
-            timeout-ms = <125>;
+            timeout-ms = <350>;
+            layers = <0>;
         };
 
         Maxem {
             bindings = <&Maxem>;
             key-positions = <26 31>;
             layers = <0>;
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <350>;
         };
     };
 
@@ -103,19 +105,19 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH     &kp SLASH     &kp NUMBER_7  &kp NUMBER_8  &kp N9        &kp MINUS  &kp BSPC
-&kp LWIN  &kp BACKSPACE     &kp DELETE         &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE          &kp ASTERISK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS   &kp EQUAL
-&trans    &kp GRAVE         &kp TILDE          &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES      &kp UNDERSCORE    &kp COMMA     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ENTER  &trans
-                                               &trans                &trans                 &trans            &trans        &kp PERIOD    &kp NUMBER_0
+&trans    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH     &kp SLASH     &kp NUMBER_7  &kp NUMBER_8  &kp N9        &kp MINUS   &kp BSPC
+&kp LWIN  &kp BACKSPACE     &kp DELETE         &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE          &kp ASTERISK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS    &kp EQUAL
+&trans    &kp GRAVE         &kp TILDE          &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES      &kp UNDERSCORE    &kp COMMA     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD  &kp ENTER
+                                               &trans                &trans                 &trans            &trans        &kp SPACE     &kp NUMBER_0
             >;
         };
 
         Nav {
             bindings = <
-&trans  &trans  &trans     &trans    &trans    &trans    &kp HOME               &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &trans  &trans
-&trans  &trans  &trans     &trans    &trans    &trans    &kp LEFT               &kp DOWN       &kp UP       &kp RIGHT  &trans  &trans
-&trans  &trans  &kp LCTRL  &kp LALT  &kp LGUI  &trans    &trans                 &trans         &trans       &trans     &trans  &trans
-                           &trans    &trans    &trans    &mt RIGHT_SHIFT SPACE  &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp HOME               &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT               &kp DOWN       &kp UP       &kp RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans                 &trans         &trans       &trans     &trans  &trans
+                        &trans  &trans  &trans    &mt RIGHT_SHIFT SPACE  &trans         &trans
             >;
         };
 
@@ -130,10 +132,10 @@
 
         Functions {
             bindings = <
-&trans  &trans     &trans    &trans    &trans     &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F10  &trans
-&trans  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans
-&trans  &trans     &trans    &trans    &trans     &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F12  &kp LCTRL
-                             &trans    &trans     &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F10  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F12  &kp LCTRL
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
