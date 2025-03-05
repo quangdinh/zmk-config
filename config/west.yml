@@ -9,7 +9,7 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: nice-view-gem
+    - name: nice-view-qdtc
       remote: quangdinh
       revision: main
   self:
