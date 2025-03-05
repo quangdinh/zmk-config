@@ -41,13 +41,15 @@
             key-positions = <3 31>;
             layers = <0>;
             require-prior-idle-ms = <350>;
+            timeout-ms = <40>;
         };
 
         name {
             bindings = <&Name>;
             key-positions = <15 21>;
-            timeout-ms = <350>;
+            timeout-ms = <40>;
             layers = <0>;
+            require-prior-idle-ms = <350>;
         };
 
         Maxem {
@@ -55,6 +57,7 @@
             key-positions = <26 31>;
             layers = <0>;
             require-prior-idle-ms = <350>;
+            timeout-ms = <40>;
         };
     };
 
